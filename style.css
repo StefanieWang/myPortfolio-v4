@@ -1,0 +1,444 @@
+/*==========================================
+           GENERAL RULES
+===========================================*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+h1 {
+   font-size: 46px;
+   font-family: 'Berkshire Swash', cursive;
+}
+
+h2 {
+	font-size: 26px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+
+.clearfix:after,
+.clearfix:before {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*==========================================
+           LAYOUT RULES
+===========================================*/
+
+body {
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #201d3a;
+	letter-spacing: .1rem;
+	line-height: 1.2;
+}
+
+header {
+    width: 100%;
+}
+
+section {
+   width: 100%;
+}
+
+/*==========================================
+           HEADER SECTION
+===========================================*/
+header {
+	background: #1d1145;
+	color: white;
+}
+
+.header-section {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-align-items: center;
+            align-items: center;
+          
+}
+
+
+.header-section .logo h1 {
+   margin-bottom: 5px;
+}
+
+.header-section .logo h3 {
+	font-size: 16px;
+	margin-top: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.header-section nav a {
+   margin-left: 30px;
+   text-transform: uppercase;
+   font-size: 20px;
+   padding-bottom: 8px;
+}
+
+.header-section nav a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.header-section .dropbtn {
+	display: none;
+	border: none;
+	background: #1d1145;
+	color: #fff;
+	padding: 14px;
+}
+
+.dropmenu {
+	width: 100%;
+	display: none;
+	background: #1d1145;
+	color: #fff;
+}
+
+.dropmenu a {
+	width: 100%;
+	display: block;
+	padding: 14px;
+	text-transform: uppercase;
+	text-align: center;
+    font-size: 16px;
+    border-top: 1px solid #b3b3b3;
+}
+
+.dropmenu a:hover {
+	color: #4cb69f;
+}
+
+/*==========================================
+           ABOUT SECTION
+===========================================*/
+#about {
+	background: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-me {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*==========================================
+           PROJECTS SECTION
+===========================================*/
+
+#projects .showcase,
+#projects .collections {
+	width: 80%;
+	margin: 20px auto;
+}
+
+.showcase-container {
+	display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.showcase-container article {
+   width: 32%;
+}
+
+.showcase-container article .picture {
+	background: #fff;
+    max-width: 320px;
+   /* height: 200px;*/
+    padding: 3%;
+    overflow: hidden;
+    -webkit-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+        -moz-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+article .picture img {
+
+}
+.showcase-container article .description {
+	padding: 3%;
+	max-width: 320px;
+	text-align: center;
+}
+
+article .description h5 {
+	color: #e76d89;
+}
+
+article .description a:hover { 
+	text-decoration: underline;
+}
+
+.collections-container {
+	display: -webkit-flex;
+    display: flex; 
+    flex-wrap: wrap;  
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+	margin-top: 10px;
+}
+
+.collections-container > div {
+   width: 45%;
+}
+
+.collections-container h3 {
+	color: #e76d89;
+}
+
+.collections-container .react,
+.collections-container .js,
+.collections-container .html {
+	background: #f5f5f5;
+	padding: 10px 40px;
+	margin-bottom: 10px;
+}
+
+
+.collections li {
+	border-bottom: 1px solid #4cb69f;
+	padding-top: 12px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+}
+
+.collections li:hover {
+	background: #4cb69f;
+}
+
+.collections button {
+	cursor: pointer;
+	margin-right: 20px;
+	padding: 12px;
+	border: 1px solid #4cb69f;
+	background: #4cb69f;
+	color: #fff;
+}
+
+.collections button:hover {
+	background: #fff;
+	color: #4cb69f;
+}
+
+.collections button.disabled {
+	cursor: default;
+    opacity: 0.6;
+}
+
+.collections button.disabled:hover {
+	cursor: default;
+    background: #4cb69f;
+	color: #fff;
+}
+/*==========================================
+           CONTACT SECTION
+===========================================*/
+#contact {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	background: #1d1145;
+}
+
+#contact a {
+	color: #fff;
+}
+
+#contact div {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#contact .logo {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	border: 3px solid #fff;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;		
+}
+
+#contact .logo {
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.3s linear;
+}
+#contact .logo:hover {
+	cursor: pointer;
+	-webkit-transform: translateY(-5px);
+       -moz-transform: translateY(-5px);
+         -o-transform: translateY(-5px);
+	        transform: translateY(-5px);
+}
+
+#contact .logo:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 1;
+    background: -webkit-radial-gradient(#fff 0%, transparent 80%);
+    background: radial-gradient(#fff 0%, transparent 80%);
+    -webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.3s linear;
+            transition: all 0.3s linear; 
+}
+
+#contact .logo:hover:before {
+	opacity: 1;
+	-webkit-transform: translateY(5px);
+       -moz-transform: translateY(5px);
+         -o-transform: translateY(5px);
+	        transform: translateY(5px);
+
+}
+
+
+/*==========================================
+           @MEDIA RULES
+===========================================*/
+
+@media screen and (max-width: 1111px){
+	.header-section,
+	.about-me,
+	#projects .showcase,
+	#projects .collections {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 890px) {
+	.showcase-container article {
+		width: 45%;
+	}
+
+	.showcase-container article .picture {
+		max-width: 360px;
+	}
+
+}
+
+@media screen and (max-width: 840px) {
+	.header-section nav {
+    	display: none;
+    }
+
+    .header-section .dropbtn{
+    	display: block;
+        position: relative;
+    }
+
+   .header-section .dropbtn:hover {
+   	   background: #fff;
+   	   color: #1d1145;
+   }
+}
+
+@media screen and (max-width: 630px) {
+	h1,
+	h2,
+	h3 {
+		text-align: center;
+	}
+    
+    .header-section, 
+	.showcase-container,
+	.collections-container {
+       flex-direction: column;
+       align-items: center;
+	}
+
+    /*=========================
+         header section
+     =========================*/
+    .header-section h1 {
+    	font-size: 40px;
+    }
+
+    .header-section h3 {
+    	font-size: 14px;
+    }
+
+    .header-section nav a {
+    	font-size: 16px;
+    }
+
+    
+    /*======================
+          project section 
+      =========================*/
+	.showcase-container article {
+		max-width: 400px; 
+		width: 100%;
+	}
+
+	.showcase-container article .picture {
+		max-width: 400px; 
+	}
+    
+    .collections-container > div {
+    	max-width: 400px;
+   		width: 100%;
+    }
+    
+    .collections li {
+		padding-top: 18px;
+		padding-bottom: 6px;
+	}
+
+}

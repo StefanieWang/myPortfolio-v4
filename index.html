@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Wenping's Portfolio</title>
+	<!-- <link rel="stylesheet" href="reset.css"> -->
+	<link rel="stylesheet" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-section">
+			<div class="logo">
+				<h1>Wenping Wang</h1>
+				<h3>Front-End Developer</h3>
+			</div>
+			<nav>
+				<a href="#about">about</a>
+				<a href="#projects">projects</a>
+				<a href="#contact">contact</a>
+			</nav>		
+			<button class="dropbtn"><i class="fa fa-bars"></i></button>
+		</div>
+		<div class="dropmenu">
+		    <a href="#about">about</a>
+			<a href="#projects">projects</a>
+			<a href="#contact">contact</a>
+		</div>
+	</header>
+	<section id="about">
+		<div class="about-me">
+			<h2>A Little About Me</h2>
+			<p>
+				I'm a front-end developer based in Brisbane, Australia. I enjoy building things for the web, learning new technologies and solving problems along the way! 
+			</p>
+			<p>
+				I started my web study journey with Ruby first, then quickly fell in love with coding. Coding in ruby is like writing an English story, natural and enjoyable. 
+	        </p>
+	        <p>
+				Then I devote most of my time to frontend side of things. I learned HTML, CSS, Javascript, jQuery, Bootstrap, Git, etc. For me, JavaScript is filled with flexibility and surprising. The more I learn it the more I find its power. Currently I am learning ReactJS, and find the React way of thinking and building web apps is fun and inspiring.  
+	        </p>
+	        <p>
+				There is still a long way ahead on my frontend study journey. I will keep learning and building new things and would love to dig into backend or any other tech to get the job done.
+			</p>
+		</div>
+	</section>
+	<section id="projects">
+		<section class="showcase">
+			<h2>Recent Projects</h2>
+			<div class="showcase-container">
+				<article>
+					<div class="picture">
+						<a href="#"><img src="image/roguelike.jpg" alt="placeholder"></a>
+					</div>
+					<div class="description">
+						<a href="#"><h3>Roguelike Dungeon Crawler Game</h3></a>
+						<p>Description about the project</p>
+						<h5>React JS, HTML, CSS</h5>
+					</div>
+				</article>
+				<article>
+					<div class="picture">
+						<img src="image/gameoflife.jpg" alt="image of game of life">
+					</div>
+					<div class="description">
+						<h3>Game of Life</h3>
+						<p>Description about the project</p>
+						<h5>Tool used in this project</h5>
+					</div>
+				</article> 
+				<article>
+					<div class="picture">
+						<img src="image/pomodoroclock.jpg" alt="image of the pomodoro clock">
+					</div>
+					<div class="description">
+						<h3>Pomodoro Clock</h3>
+						<p>Description about the project</p>
+						<h5>Tool used in this project</h5>
+					</div>
+				</article>
+				<article>
+					<div class="picture">
+						<img src="image/simongame.jpg" alt="image of simon game">
+					</div>
+					<div class="description">
+						<h3>Simon Game</h3>
+						<p>Description about the project</p>
+						<h5>React JS, HTML, CSS</h5>
+					</div>
+				</article>
+				<article>
+					<div class="picture">
+						<img src="image/tictactoe.jpg" alt="image of tic tac toe">
+					</div>
+					<div class="description">
+						<h3>Tic Tac Toe</h3>
+						<p>Description about the project</p>
+						<h5>Tool used in this project</h5>
+					</div>
+				</article> 
+				<article>
+					<div class="picture">
+						<img src="image/calculator.jpg" alt="image of calculator">
+					</div>
+					<div class="description">
+						<h3>JavaScipt Calculator</h3>
+						<p>Description about the project</p>
+						<h5>Tool used in this project</h5>
+					</div>
+				</article>
+		    </div>
+		</section>
+		<section class="collections">
+			<h2>More Projects</h2>
+			<div class="button-group">
+				<button id="view" class="disabled">View More</button>
+				<button id="hide">Hide</button>
+			</div>
+			<div class="collections-container">  
+				<div class="js">
+					<h3>JavaScript & jQuery</h3>
+					<ul>
+						<li><a href="#">Simon Game</a></li>
+						<li><a href="#">Tic Tac Toe</a></li>
+						<li><a href="#">Pomodoro Clock</a></li>
+						<li><a href="#">JavaScript Calculator</a></li>
+						<li><a href="#">Ajax Infinite Scroll</a></li>
+						<li><a href="#">Image Carousel</a></li>
+						<li><a href="#">Google Maps</a></li>
+						<li><a href="#">Form Validation</a></li>
+						<li><a href="#">Canvas Missile Command</a></li>
+						<li><a href="#">Minesweeper</a></li>
+						<li><a href="#">Snake Game</a></li>
+					</ul>
+				</div>
+				
+				<div>       
+					<div class="react">
+						<h3>ReactJs</h3>
+						<ul>
+							<li><a href="#">Roguelike Dungeon Crawler Game</a></li>
+							<li><a href="#">Game of Life</a></li>
+							<li><a href="#">Recipe Box</a></li>
+							<li><a href="#">Leader Board</a></li>
+							<li><a href="#">Dynamic Div Generation</a></li>
+							<li><a href="#">Markdown Previewer</a></li>
+						</ul>
+					</div>
+	                <div class="html">
+						<h3>HTML, CSS & Responsive Design</h3>
+						<ul>
+							<li><a target="_blank" href="https://github.com/StefanieWang/html-bootstrap-newsweek">Newsweek Clone (with Bootstrap)</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/html-responsive-design">The Next Web clone</a></li>
+						</ul>
+					</div>
+			    </div>
+			</div>
+		</section>
+	</section>
+
+	<section id="contact">
+		<div class="logo">
+			<a href="#"><i class="fa fa-github"></i></a>
+		</div>
+		<div class="logo">
+			<a href="#"><i class="fa fa-linkedin"></i></a>
+		</div>
+		<div class="logo">
+			<a href="#"><i class="fa fa-codepen"></i></a>
+		</div>
+	</section>
+
+	<footer>copy right</footer>
+	
+</body>
+</html>
