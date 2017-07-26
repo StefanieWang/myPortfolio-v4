@@ -6,7 +6,8 @@
 	<title>Wenping's Portfolio</title>
 	<!-- <link rel="stylesheet" href="reset.css"> -->
 	<link rel="stylesheet" href="normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="jquery-3.1.1.js"></script>
@@ -34,8 +35,11 @@
 		</div>
 	</header>
 	<section id="about">
+		<div class="banner">
+			<div class="photo"></div>
+		</div>
 		<div class="about-me">
-			<h2>A Little About Me</h2>
+			<h2>About Me</h2>
 			<p>
 				I'm a front-end developer based in Brisbane, Australia. I enjoy building things for the web, learning new technologies and solving problems along the way! 
 			</p>
@@ -56,62 +60,87 @@
 			<div class="showcase-container">
 				<article>
 					<div class="picture">
-						<a href="#"><img src="image/roguelike.jpg" alt="placeholder"></a>
+						<a target="_blank" href="https://github.com/StefanieWang/ReactJS-Roguelike-Dungeon-Crawler"><img src="image/roguelike.jpg" alt="placeholder"></a>
 					</div>
 					<div class="description">
-						<a href="#"><h3>Roguelike Dungeon Crawler Game</h3></a>
-						<p>Description about the project</p>
-						<h5>React JS, HTML, CSS</h5>
+						<a target="_blank" href="https://github.com/StefanieWang/ReactJS-Roguelike-Dungeon-Crawler"><h3>Roguelike Dungeon Crawler Game</h3></a>
+						<ul>
+							<li>This is a roguelike dungeon crawler game built with React.</li>
+							<li>Player can beat enemies to gain XP and can pick up health items as well as weapons.</li>
+							<li>All dungeon maps are generated randomly. Players can move around within the map by pressing the arrow keys. Player enters the next dungeon through the gate entrance.</li>
+							<li>Player wins by beating the big boss in dungeon 4.</li>
+						</ul>
+						<h5>React JS - JavaScript - HTML - CSS</h5>
 					</div>
 				</article>
 				<article>
 					<div class="picture">
-						<img src="image/gameoflife.jpg" alt="image of game of life">
+						<a target="_blank" href="https://github.com/StefanieWang/ReactJS-Game-of-Life"><img src="image/gameoflife.jpg" alt="image of game of life"></a>
 					</div>
 					<div class="description">
-						<h3>Game of Life</h3>
-						<p>Description about the project</p>
-						<h5>Tool used in this project</h5>
+						<a target="_blank" href="https://github.com/StefanieWang/ReactJS-Game-of-Life"><h3>Game of Life</h3></a>
+						<ul>
+							<li>The Game of Life is an example of a cellular automaton. Each square on board represents a cell (dead or alive). The status of a cell in the next generation is determined by a set of rules.</li>
+							<li>In this game of life, user can choose from different board sizes, sim speed, and simple patterns.</li>
+							<li>User can observe and investigate the evolution of cells by pause, step running or adding new cells anytime.</li>
+						</ul>
+						<h5>React JS - JavaScript - jQuery - Canvas - HTML - CSS</h5>
 					</div>
 				</article> 
 				<article>
 					<div class="picture">
-						<img src="image/pomodoroclock.jpg" alt="image of the pomodoro clock">
+						<a target="_blank" href="https://github.com/StefanieWang/JavaScript-Simon-Game"><img src="image/simongame.jpg" alt="image of simon game"></a>
 					</div>
 					<div class="description">
-						<h3>Pomodoro Clock</h3>
-						<p>Description about the project</p>
-						<h5>Tool used in this project</h5>
+						<a target="_blank" href="https://github.com/StefanieWang/JavaScript-Simon-Game"><h3>Simon Game</h3></a>
+						<ul>
+							<li>Simon is a classic electronic game of memory skill. It creates a series of tones and lights and requires a user to repeat the series. If the user succeeds the series becomes progressively longer and more complex.</li> 
+							<li>Users can restart the game anytime by hit the "on-off" button.</li>
+							<li>Users can choose to play in strict mode where if they get a button press wrong, the game will restart to a single step.</li>
+							<li>User is notified the number of steps in the current series.</li>
+						</ul>
+						<h5>JavaScript - jQuery - HTML - CSS</h5>
 					</div>
 				</article>
 				<article>
 					<div class="picture">
-						<img src="image/simongame.jpg" alt="image of simon game">
+						<a target="_blank" href="https://github.com/StefanieWang/JavaScript-pomodoro-clock"><img src="image/pomodoroclock2.jpg" alt="image of the pomodoro clock"></a>
 					</div>
 					<div class="description">
-						<h3>Simon Game</h3>
-						<p>Description about the project</p>
-						<h5>React JS, HTML, CSS</h5>
+						<a target="_blank" href="https://github.com/StefanieWang/JavaScript-pomodoro-clock"><h3>Pomodoro Clock</h3></a>
+						<ul>
+							<li>This is a flexible and easy to use pomodoro timer. </li>
+							<li>User can cunstomize the work and break length anytime when the timer is stopped.</li> 
+							<li>The clock is drawn with HTML5 Canvas.</li>
+						</ul>
+						<h5>JavaScript - jQuery - Canvas - HTML - CSS</h5>
 					</div>
 				</article>
 				<article>
 					<div class="picture">
-						<img src="image/tictactoe.jpg" alt="image of tic tac toe">
+						<a target="_blank" href="https://github.com/StefanieWang/JavaScript-tictactoe"><img src="image/tictactoe.jpg" alt="image of tic tac toe"></a>
 					</div>
 					<div class="description">
-						<h3>Tic Tac Toe</h3>
-						<p>Description about the project</p>
-						<h5>Tool used in this project</h5>
+						<a target="_blank" href="https://github.com/StefanieWang/JavaScript-tictactoe"><h3>Tic Tac Toe</h3></a>
+						<ul>
+							<li>In this tic-tac-toe game, player can choose to play with another player or computer(with AI).</li>
+							<li>Player can choose to play as "x" or "o"</li> 
+							<li>The game can be reset at anytime.</li>
+							</ul>
+						<h5>JavaScript - jQuery - HTML - CSS</h5>
 					</div>
 				</article> 
 				<article>
 					<div class="picture">
-						<img src="image/calculator.jpg" alt="image of calculator">
+						<a target="_blank" href="https://github.com/StefanieWang/JavaScript-calculator2"><img src="image/calculator2.jpg" alt="image of calculator"></a>
 					</div>
 					<div class="description">
-						<h3>JavaScipt Calculator</h3>
-						<p>Description about the project</p>
-						<h5>Tool used in this project</h5>
+						<a target="_blank" href="https://github.com/StefanieWang/JavaScript-calculator2"><h3>JavaScript Calculator</h3></a>
+						<ul>
+							<li>This calculator does all the basic calculations (can keep chaining mathematical operations). </li>
+							<li>It has AC (all clear) and CE (clear last entry) buttons to clear the input field.</li> <li>The digit limit is 10. Float result will be rounded to 6 decimal places.</li>
+						</ul>
+						<h5>JavaScript - jQuery - HTML - CSS3</h5>
 					</div>
 				</article>
 		    </div>
@@ -126,37 +155,37 @@
 				<div class="js">
 					<h3>JavaScript & jQuery</h3>
 					<ul>
-						<li><a href="#">Simon Game</a></li>
-						<li><a href="#">Tic Tac Toe</a></li>
-						<li><a href="#">Pomodoro Clock</a></li>
-						<li><a href="#">JavaScript Calculator</a></li>
-						<li><a href="#">Ajax Infinite Scroll</a></li>
-						<li><a href="#">Image Carousel</a></li>
-						<li><a href="#">Google Maps</a></li>
-						<li><a href="#">Form Validation</a></li>
-						<li><a href="#">Canvas Missile Command</a></li>
-						<li><a href="#">Minesweeper</a></li>
-						<li><a href="#">Snake Game</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/JavaScript-Simon-Game">Simon Game</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/JavaScript-tictactoe">Tic Tac Toe</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/JavaScript-pomodoro-clock">Pomodoro Clock</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/JavaScript-calculator2">JavaScript Calculator</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/ajax-infinite-scroll">Ajax Infinite Scroll</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/JavaScript-image-carousel">Image Carousel</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/JavaScript-google-maps">Google Maps</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/jQuery-validating-a-form">Form Validation</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/canvas-missile-command">Canvas Missile Command</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/JavaScript-minesweeper">Minesweeper</a></li>
+						<li><a target="_blank" href="https://github.com/StefanieWang/jQuery-snake-game">Snake Game</a></li>
 					</ul>
 				</div>
 				
 				<div>       
 					<div class="react">
-						<h3>ReactJs</h3>
+						<h3>React JS</h3>
 						<ul>
-							<li><a href="#">Roguelike Dungeon Crawler Game</a></li>
-							<li><a href="#">Game of Life</a></li>
-							<li><a href="#">Recipe Box</a></li>
-							<li><a href="#">Leader Board</a></li>
-							<li><a href="#">Dynamic Div Generation</a></li>
-							<li><a href="#">Markdown Previewer</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/ReactJS-Roguelike-Dungeon-Crawler">Roguelike Dungeon Crawler Game</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/ReactJS-Game-of-Life">Game of Life</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/ReactJS-Recipe-Box">Recipe Box</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/ReactJs-Leaderboard">Leader Board</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/ReactJS-Simple-Div-Generation">Dynamic Div Generation</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/React-Markdown-Previewer">Markdown Previewer</a></li>
 						</ul>
 					</div>
 	                <div class="html">
 						<h3>HTML, CSS & Responsive Design</h3>
 						<ul>
-							<li><a target="_blank" href="https://github.com/StefanieWang/html-bootstrap-newsweek">Newsweek Clone (with Bootstrap)</a></li>
-							<li><a target="_blank" href="https://github.com/StefanieWang/html-responsive-design">The Next Web clone</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/html-bootstrap-newsweek">Newsweek Homepage Clone (with Bootstrap)</a></li>
+							<li><a target="_blank" href="https://github.com/StefanieWang/html-responsive-design">The Next Web Homepage Clone</a></li>
 						</ul>
 					</div>
 			    </div>
@@ -164,19 +193,22 @@
 		</section>
 	</section>
 
-	<section id="contact">
-		<div class="logo">
-			<a href="#"><i class="fa fa-github"></i></a>
-		</div>
-		<div class="logo">
-			<a href="#"><i class="fa fa-linkedin"></i></a>
-		</div>
-		<div class="logo">
-			<a href="#"><i class="fa fa-codepen"></i></a>
-		</div>
-	</section>
+	<footer>
+		<section id="contact">
+			<div class="logo"><a href="mailto:Wenping@wenping.wangyu@yahoo.com"><i class="fa fa-envelope-o"></i></a></div>
+			<div class="logo">
+				<a target="_blank" href="https://github.com/StefanieWang"><i class="fa fa-github"></i></a>
+			</div>
+			<div class="logo">
+				<a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+			</div>
+			<div class="logo">
+				<a target="_blank" href="https://codepen.io/StefanieWang/"><i class="fa fa-codepen"></i></a>
+			</div>
+	    </section>
 
-	<footer>copy right</footer>
+		<section class="copy-right">© 2017 Wenping Wang. All rights reserved.</section>
+	</footer>
 	
 </body>
 </html>

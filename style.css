@@ -10,20 +10,25 @@
 }
 
 h1 {
+	/*font-weight: normal;*/
    font-size: 46px;
    font-family: 'Berkshire Swash', cursive;
 }
 
 h2 {
-	font-size: 26px;
+	font-weight: 400;
+	font-size: 30px;
+	margin-bottom: 30px;
 }
 
 h3 {
-	font-size: 18px;
+	font-weight: 500;
+	font-size: 20px;
 }
 
 h5 {
-	font-size: 16px;
+	font-weight: 500;
+	font-size: 18px;
 }
 
 a {
@@ -55,27 +60,26 @@ ul {
 ===========================================*/
 
 body {
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
+	font-weight: 300;
 	color: #201d3a;
-	letter-spacing: .1rem;
-	line-height: 1.2;
+	line-height: 1.5;
 }
 
-header {
+header,
+section,
+footer {
     width: 100%;
 }
 
-section {
-   width: 100%;
-}
 
 /*==========================================
            HEADER SECTION
 ===========================================*/
 header {
 	background: #1d1145;
-	color: white;
+	color: #fff;
 }
 
 .header-section {
@@ -89,15 +93,16 @@ header {
             justify-content: space-between;
     -webkit-align-items: center;
             align-items: center;
-          
+    
+	
 }
 
 
-.header-section .logo h1 {
+.header-section h1 {
    margin-bottom: 5px;
 }
 
-.header-section .logo h3 {
+.header-section h3 {
 	font-size: 16px;
 	margin-top: 0;
 	text-align: center;
@@ -114,6 +119,7 @@ header {
 
 .header-section nav a:hover {
 	border-bottom: 1px solid #fff;
+
 }
 
 .header-section .dropbtn {
@@ -122,6 +128,14 @@ header {
 	background: #1d1145;
 	color: #fff;
 	padding: 14px;
+}
+
+.header-section .dropbtn {
+	padding: 10px 12px;
+}
+
+.header-section .dropbtn i {
+	font-size: 24px;
 }
 
 .dropmenu {
@@ -150,19 +164,32 @@ header {
 ===========================================*/
 #about {
 	background: #f5f5f5;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
+
+/*.banner {
+	width: 100%;
+	height: 150px;
+	background: url("image/dongting.jpg") no-repeat center center;
+}*/
 
 .about-me {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
 /*==========================================
            PROJECTS SECTION
 ===========================================*/
+/*.showcase article ul {
+	display: none;
+}*/
+#projects {
+   padding-top: 30px;
+}
 
 #projects .showcase,
 #projects .collections {
@@ -183,6 +210,7 @@ header {
    width: 32%;
 }
 
+
 .showcase-container article .picture {
 	background: #fff;
     max-width: 320px;
@@ -194,9 +222,12 @@ header {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-article .picture img {
-
+.showcase-container article .picture:hover {
+	-webkit-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49); 
+        -moz-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49); 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49); 
 }
+
 .showcase-container article .description {
 	padding: 3%;
 	max-width: 320px;
@@ -211,6 +242,13 @@ article .description a:hover {
 	text-decoration: underline;
 }
 
+article  ul {
+	margin-left: 10px;
+	list-style: square;
+	text-align: left;
+	font-size: 18px;
+	
+}
 .collections-container {
 	display: -webkit-flex;
     display: flex; 
@@ -276,14 +314,17 @@ article .description a:hover {
 /*==========================================
            CONTACT SECTION
 ===========================================*/
+footer {
+	padding-bottom: 30px;
+	padding-top: 30px;
+	background: #1d1145;
+}
+
 #contact {
 	display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
-    justify-content: center;
-	padding-bottom: 30px;
-	padding-top: 20px;
-	background: #1d1145;
+    justify-content: center;		
 }
 
 #contact a {
@@ -348,6 +389,12 @@ article .description a:hover {
 
 }
 
+footer .copy-right {
+	margin-top: 20px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
 
 /*==========================================
            @MEDIA RULES
@@ -367,10 +414,11 @@ article .description a:hover {
 		width: 45%;
 	}
 
-	.showcase-container article .picture {
+	.showcase-container article .picture, 
+	.showcase-container article .description{
 		max-width: 360px;
 	}
-
+	
 }
 
 @media screen and (max-width: 840px) {
@@ -396,7 +444,7 @@ article .description a:hover {
 		text-align: center;
 	}
     
-    .header-section, 
+   /* .header-section,*/ 
 	.showcase-container,
 	.collections-container {
        flex-direction: column;
@@ -407,7 +455,7 @@ article .description a:hover {
          header section
      =========================*/
     .header-section h1 {
-    	font-size: 40px;
+    	font-size: 36px;
     }
 
     .header-section h3 {
@@ -427,7 +475,8 @@ article .description a:hover {
 		width: 100%;
 	}
 
-	.showcase-container article .picture {
+	.showcase-container article .picture,
+	.showcase-container article .description {
 		max-width: 400px; 
 	}
     
