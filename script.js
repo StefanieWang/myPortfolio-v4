@@ -1,31 +1,21 @@
-
-var hideCollections = function() {
-	if(!$("#hide").hasClass("disabled")){
-		$(".collections-container").slideUp(500); 
-  		$("#hide").addClass("disabled")
-   		$("#view").removeClass("disabled");			
-	}
-   
-}
-
-var showCollections = function() {
-	if(!$("#view").hasClass("disabled")){
+var toggleCollections = function() {
+	var viewMore = "View More";
+	var viewLess = "View Less";
+	var prev = $("#view").html();
+	var next = prev === viewMore ? viewLess : viewMore;
+	if(prev === viewMore){
 		$(".collections-container").slideDown(500);
-		$("#view").addClass("disabled")
-		$("#hide").removeClass("disabled");			
+	} else {
+		$(".collections-container").slideUp(500); 
 	}
-	
-}
 
+	$("#view").html(next); 
+}
 
 $(document).ready(function(){
 	$("#view").click(function(){
-		showCollections();
-	});
-
-	$("#hide").click(function(){
-		hideCollections();	
-	});    
+		toggleCollections();
+	});  
 
 	$(".dropbtn").click(function(){
 		$(".dropmenu").slideToggle(500);
@@ -35,7 +25,8 @@ $(document).ready(function(){
 
 $(window).resize(function(){
 	if($(window).width() <= 630) {
-    	hideCollections();
+    	$("#view").html("View More");
+    	$(".collections-container").slideUp(500); 
 	};
 	
 	if($(".header-section .dropbtn").css("display") === "none"){

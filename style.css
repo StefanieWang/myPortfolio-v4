@@ -23,12 +23,12 @@ h2 {
 
 h3 {
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 h5 {
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 a {
@@ -103,7 +103,7 @@ header {
 }
 
 .header-section h3 {
-	font-size: 16px;
+	font-size: 18px;
 	margin-top: 0;
 	text-align: center;
 	text-transform: uppercase;
@@ -184,9 +184,6 @@ header {
 /*==========================================
            PROJECTS SECTION
 ===========================================*/
-/*.showcase article ul {
-	display: none;
-}*/
 #projects {
    padding-top: 30px;
 }
@@ -207,7 +204,8 @@ header {
 }
 
 .showcase-container article {
-   width: 32%;
+    width: 32%;
+    margin-bottom: 25px;
 }
 
 
@@ -231,24 +229,97 @@ header {
 .showcase-container article .description {
 	padding: 3%;
 	max-width: 320px;
+	height: 140px;
 	text-align: center;
 }
 
-article .description h5 {
+article h3 {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+article  h5 {
 	color: #e76d89;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 
-article .description a:hover { 
-	text-decoration: underline;
+/* modal */
+.modalDialog {
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+       -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
-article  ul {
-	margin-left: 10px;
-	list-style: square;
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	max-width: 800px;
+	width: 80%;
+	position: relative;
+	margin: 10% auto;
+	padding: 30px 50px;
+	border-radius: 10px;
+	background: #fff; 
+}
+
+.close {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	color: #ebebeb;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.close:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+article .modal-content {
 	text-align: left;
-	font-size: 18px;
-	
 }
+
+/*article .button-group {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -80px;
+	width: 160px;
+}*/
+
+article button {
+	cursor: pointer;
+	margin-right: 10px;
+	width: 70px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background: #4cb69f;
+	font-size: 16px;
+	color: #fff;
+}
+
+article button:nth-child(2) {
+	margin-right: 0;
+}
+
+article button:hover {
+	opacity: 0.8;
+}
+
 .collections-container {
 	display: -webkit-flex;
     display: flex; 
@@ -291,26 +362,16 @@ article  ul {
 	cursor: pointer;
 	margin-right: 20px;
 	padding: 12px;
-	border: 1px solid #4cb69f;
+	border: none;
+	border-radius: 10px;
 	background: #4cb69f;
 	color: #fff;
 }
 
 .collections button:hover {
-	background: #fff;
-	color: #4cb69f;
+	opacity: 0.8;
 }
 
-.collections button.disabled {
-	cursor: default;
-    opacity: 0.6;
-}
-
-.collections button.disabled:hover {
-	cursor: default;
-    background: #4cb69f;
-	color: #fff;
-}
 /*==========================================
            CONTACT SECTION
 ===========================================*/
@@ -480,6 +541,10 @@ footer .copy-right {
 		max-width: 400px; 
 	}
     
+    .modalDialog > div {
+    	width: 90%;
+    	padding: 30px 20px;
+    }
     .collections-container > div {
     	max-width: 400px;
    		width: 100%;
