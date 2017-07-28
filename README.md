@@ -10,8 +10,6 @@ This is the 4th version of my portofolio (hopefully will be the last one~). I de
    The Projects section has a showcase section and a project list section which will be hidden on small devices ( can be shown by clicking
    the "View More" button).
    
-Things to do: the descriptions(now shown as lists) of showcase projects are not elegant enough, I will try to make the descriptions more abstract
-and will consider move the project description into a modal window. In addtion, I will add my photo at a proper place in the About section 
-(not pretty enough to take a photo recently).
+update: moved the project description into a modal window. 
 
 I will continue refine the design until I am fully satisfied.
